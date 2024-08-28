@@ -1,0 +1,137 @@
+{
+	"bomFormat": "CycloneDX",
+	"specVersion": "1.4",
+	"serialNumber": "urn:uuid:c282f4c3-9a5f-4eeb-8f77-0f2de5931d96",
+	"version": 1,
+	"metadata": {
+		"timestamp": "2024-01-15T18:37:31.444Z",
+		"tools": [
+			{
+				"vendor": "OpenText",
+				"name": "FCLI",
+				"version": "2.4.0"
+			}
+		],
+		"component": {
+			"type": "application",
+			"name": "SampleApp.app.zip",
+			"version": "2024-01-12",
+			"bom-ref": "SampleApp/SampleApp.app.zip"
+		}
+	},
+	"components": [
+		{
+			"type": "library",
+			"name": "fcli",
+			"version": "22.6.0",
+			"cpe": "cpe:2.3:a:fcli:fcli:22.6.0:*:*:*:*:*:*:*",
+			"bom-ref": "SampleApp/SampleApp.app.zip/SampleApp.app.zip/fcli/22.6.0/fcli",
+			"licenses": [
+				{
+					"license": {
+						"name": "Other"
+					}
+				}
+			],
+			"supplier": {
+				"name": "fcli"
+			}
+		},
+		{
+			"type": "library",
+			"name": "nanopb",
+			"version": "0.3.9.9",
+			"cpe": "cpe:2.3:a:*:nanopb:0.3.9.9:*:*:*:*:*:*:*",
+			"bom-ref": "SampleApp/SampleApp.app.zip/SampleApp.app.zip/SampleApp.app/Wrapper/Tapcart.app/Frameworks/nanopb.framework/nanopb/nanopb/0.3.9.9/unspecified",
+			"licenses": [
+				{
+					"license": {
+						"id": "Zlib"
+					}
+				}
+			],
+			"supplier": {
+				"name": "unspecified"
+			}
+		},
+		{
+			"type": "library",
+			"name": "kotlin",
+			"version": "1.8.22",
+			"cpe": "cpe:2.3:a:*:kotlin:1.8.22:*:*:*:*:*:*:*",
+			"bom-ref": "SampleApp/SampleApp.app.zip/SampleApp.app.zip/SampleApp.app/Wrapper/Tapcart.app/Frameworks/TapcartMultiplatform.framework/TapcartMultiplatform/kotlin/1.8.22/unspecified",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache.0"
+					}
+				}
+			],
+			"supplier": {
+				"name": "unspecified"
+			}
+		},
+		{
+			"type": "library",
+			"name": "llvm",
+			"version": "org-17-init",
+			"cpe": "cpe:2.3:a:*:llvm:org-17-init:*:*:*:*:*:*:*",
+			"bom-ref": "SampleApp/SampleApp.app.zip/SampleApp.app.zip/SampleApp.app/Wrapper/Tapcart.app/Frameworks/SkeletonView.framework/SkeletonView/llvm/org-17-init/unspecified",
+			"supplier": {
+				"name": "unspecified"
+			}
+		},
+		{
+			"type": "library",
+			"name": "swift",
+			"version": "5.0",
+			"cpe": "cpe:2.3:a:apple:swift:5.0:*:*:*:*:*:*:*",
+			"bom-ref": "SampleApp/SampleApp.app.zip/SampleApp.app.zip/SampleApp.app/Wrapper/Tapcart.app/Frameworks/Embrace.framework/Embrace/swift/5.0/apple",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache.0"
+					}
+				}
+			],
+			"supplier": {
+				"name": "apple"
+			}
+		},
+		{
+			"type": "library",
+			"name": "expo",
+			"version": "ios.16.1",
+			"cpe": "cpe:2.3:a:*:expo:ios.16.1:*:*:*:*:*:*:*",
+			"bom-ref": "SampleApp/SampleApp.app.zip/SampleApp.app.zip/SampleApp.app/Wrapper/Tapcart.app/Tapcart/expo/ios.16.1/unspecified",
+			"licenses": [
+				{
+					"license": {
+						"id": "Apache.0"
+					}
+				},
+				{
+					"license": {
+						"id": "MIT"
+					}
+				}
+			],
+			"supplier": {
+				"name": "unspecified"
+			}
+		}
+	],
+	"dependencies": [
+		{
+			"ref": "SampleApp/SampleApp.app.zip",
+			"dependsOn": [
+				"SampleApp/SampleApp.app.zip/SampleApp.app.zip/fcli/22.6.0/fcli",
+				"SampleApp/SampleApp.app.zip/SampleApp.app.zip/SampleApp.app/Wrapper/Tapcart.app/Frameworks/nanopb.framework/nanopb/nanopb/0.3.9.9/unspecified",
+				"SampleApp/SampleApp.app.zip/SampleApp.app.zip/SampleApp.app/Wrapper/Tapcart.app/Frameworks/TapcartMultiplatform.framework/TapcartMultiplatform/kotlin/1.8.22/unspecified",
+				"SampleApp/SampleApp.app.zip/SampleApp.app.zip/SampleApp.app/Wrapper/Tapcart.app/Frameworks/SkeletonView.framework/SkeletonView/llvm/org-17-init/unspecified",
+				"SampleApp/SampleApp.app.zip/SampleApp.app.zip/SampleApp.app/Wrapper/Tapcart.app/Frameworks/Embrace.framework/Embrace/swift/5.0/apple",
+				"SampleApp/SampleApp.app.zip/SampleApp.app.zip/SampleApp.app/Wrapper/Tapcart.app/Tapcart/expo/ios.16.1/unspecified"
+			]
+		}
+	]
+}
